@@ -39,6 +39,15 @@ z-index: -1;
     background-size: contain;
     background-repeat: no-repeat;
 }
+#attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .5rem;
+    color: hsla(0, 0%, 0%, 0.5);
+}
+
 #main-right {
     width: 65vw;
 }
