@@ -5,6 +5,9 @@
     --primary: #5B8266;
     --secondary: #202A25;
 }
+*, h1 {
+    font-family: "Cormorant SC", Arial, serif;
+}
 #container {
     display: flex;
     flex-direction: row;
@@ -53,11 +56,30 @@ z-index: -1;
     left: 50%;
     transform: translateX(-50%);
     font-size: .5rem;
-    color: var(--black-600);
+    color: var(--secondary);
 }
-
 #main-right {
+    display: flex;
+    flex-direction: column;
     width: 65vw;
+    background-color: var(--light);
+    overflow: hidden;
+    color: var(--black-900);
+}
+#right-top {
+    width: 100%;
+    height: 35vh;
+    border: solid 1px black;
+}
+#right-mid {
+    width: 100%;
+    height: 30vh;
+    border: solid 1px black;
+}
+#right-bot {
+    width: 100%;
+    height: 35vh;
+    border: solid 1px black;
 }
 @media (max-width: 900px) {
     #container {
