@@ -1,5 +1,9 @@
 :root {
     --black-600: hsla(0, 0%, 0%, 0.6);
+    --black-900: #131B23;
+    --light: #E9F1F7;
+    --primary: #5B8266;
+    --secondary: #202A25;
 }
 #container {
     display: flex;
