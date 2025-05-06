@@ -44,10 +44,10 @@ z-index: -1;
 #main-logo::before {
     content: "";
     position: absolute;
-    top: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
+    top: 1vw;
+    bottom: 1vw;
+    left: 1vw;
+    right: 1vw;
     background-image: url(img/main-logo.png);
     background-position: center;
     background-size: contain;
@@ -70,9 +70,8 @@ z-index: -1;
     color: var(--black-900);
 }
 #right-top {
-    width: 100%;
-    height: 35vh;
-    padding: 4vw;
+    width: 80%;
+    padding: 2vw 4vw;
 }
 h1 {
     font-family: "Cormorant SC", Arial, serif;
@@ -81,15 +80,14 @@ h1 {
     color: var(--primary);
 }
 p, fieldset {
-    font-size: clamp(.9rem, 1.5vw, 3rem);
+    font-size: clamp(.6rem, 1.2vw, 2.7rem);
 }
 strong {
     color: var(--secondary);
 }
 #right-mid {
     width: 100%;
-    height: 30vh;
-    padding: 4vw;
+    padding: 2vw;
 
     background-color: var(--lighter);
     box-shadow: var(--box-shadow);
@@ -98,13 +96,15 @@ form {
     width: 100%;
 }
 fieldset {
-    border: none;
     display: flex;
+    padding: 1vw 2vw;
     gap: 4vw;
+    border: outset 2px var(--primary);
 }
 legend {
     color: var(--secondary);
     font-weight: 900;
+    padding: 0 2vw;
 }
 #form-left, #form-right {
     display: flex;
@@ -113,7 +113,6 @@ legend {
 }
 #right-bot {
     width: 100%;
-    height: 35vh;
     padding: 2rem;
 
 }
@@ -123,7 +122,7 @@ legend {
     }
     #main-left {
         width: 100vw;
-        height: 35vh;
+        height: 30vh;
     }
     #main-left::before {
         content: "";
@@ -134,9 +133,16 @@ legend {
         background-position: center;
         filter: blur(3px);
         z-index: -1;
-        }
+    }
+    #main-logo {
+        height: 10vh;
+    }
     #main-right {
         width: 100vw;
-        height: 65vh;
+        height: 100%;
+    }
+    #right-top {
+        width: 100%;
+
     }
 }
