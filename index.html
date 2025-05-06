@@ -44,27 +44,42 @@
                 <form action="example.com/path" method="post">
                     <fieldset>
                         <legend>Shape Your Future, Start Here:</legend>
-
-                        <div id="form-left">
-                            <label for="first-name">*First Name</label>
-                            <input type="text" placeholder="name" id="first-name" />
-                            <label for="email">*email</label>
-                            <input type="email" placeholder="@" id="email" />
-                            <label for="password">*password</label>
-                            <input type="password" placeholder="password" id="password" />
+                        <div id="form-first-row">
+                            <div class="row-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" placeholder="name" id="first-name" />
+                            </div>
+                            <div class="row-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" placeholder="last name" id="last-name" />
+                            </div>
                         </div>
-                        <div id="form-right">
-                            <label for="last-name">*Last Name</label>
-                            <input type="text" placeholder="last name" id="last-name" />
-                            <label for="number">*phone number</label>
-                            <input type="text" placeholder="number" id="number" />
-                            <label for="confirm">*confirm password</label>
-                            <input type="password" placeholder="confirm" id="confirm" />
+                        <div id="form-second-row">
+                            <div class="row-group">
+                                <label for="email">email</label>
+                                <input type="email" placeholder="@" id="email" />
+                            </div>
+                            <div class="row-group">
+                                <label for="number">phone number</label>
+                                <input type="text" placeholder="number" id="number" />
+                            </div>
+                        
+                        </div>
+                        <div id="form-third-row">
+                            <div class="row-group">
+                                <label for="password">password</label>
+                                <input type="password" placeholder="password" id="password" />
+                            </div>
+                            <div class="row-group">
+                                <label for="confirm">confirm password</label>
+                                <input type="password" placeholder="confirm" id="confirm" />
+                            </div>
                         </div>
                     </fieldset>
                 </form>
             </div>
-            <div id="right-bot"></div>
+            <div id="right-bot">
+            </div>
         </main>
     </div>
 </body>

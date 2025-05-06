@@ -13,7 +13,6 @@
 
 #container {
     display: flex;
-    flex-direction: row;
     width: 100vw;
     height: 100vh;
 }
@@ -58,8 +57,8 @@ z-index: -1;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--secondary);
-    font-size: .5rem;
+    color: var(--lighter);
+    font-size: .4rem;
 }
 #main-right {
     display: flex;
@@ -86,36 +85,49 @@ strong {
     color: var(--secondary);
 }
 #right-mid {
-    width: 100%;
-    padding: 2vw;
+    padding: 2vw 4vw;
 
     background-color: var(--lighter);
     box-shadow: var(--box-shadow);
 }
-form {
-    width: 100%;
-}
+
 fieldset {
-    display: flex;
     padding: 1vw 2vw;
-    gap: 4vw;
     border: outset 2px var(--primary);
+    border-radius: .2rem;
 }
 legend {
     color: var(--secondary);
     font-weight: 900;
-    padding: 0 2vw;
+    padding: 0 3vw 0 1vw;
 }
-#form-left, #form-right {
+
+#form-first-row, #form-second-row, #form-third-row {
+    display: flex;
+    width: 80%;
+    gap: 8vw;
+    padding: .5vw 2vw;
+} 
+.row-group {
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
+input {
+    border: outset 1px var(--secondary);
+    border-radius: .2rem;
+    padding: .4vw;
+    background-color: var(--light);
+}
+
 #right-bot {
     width: 100%;
     padding: 2rem;
-
 }
+
+
+
+
+
 @media (max-width: 900px) {
     #container {
         flex-direction: column;
