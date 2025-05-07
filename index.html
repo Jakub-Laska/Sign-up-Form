@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="../css-reset/reset.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jakub-Laska/css-reset@latest/reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,44 +44,45 @@
                 <form action="example.com/path" method="post">
                     <fieldset>
                         <legend>Shape Your Future, Start Here:</legend>
-                        <div id="form-first-row">
+                        <div id="form-row">
                             <div class="row-group">
                                 <label for="first-name">First Name</label>
-                                <input type="text" placeholder="name" id="first-name" />
+                                <input type="text" name="first-name" id="first-name" />
                             </div>
                             <div class="row-group">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" placeholder="last name" id="last-name" />
+                                <input type="text" name="last-name" id="last-name" />
                             </div>
                         </div>
-                        <div id="form-second-row">
+                        <div id="form-row">
                             <div class="row-group">
                                 <label for="email">email</label>
-                                <input type="email" placeholder="@" id="email" />
+                                <input type="email" name="email" id="email" />
                             </div>
                             <div class="row-group">
                                 <label for="number">phone number</label>
-                                <input type="text" placeholder="number" id="number" />
+                                <input type="tel" name="phone-number" id="number" />
                             </div>
                         
                         </div>
-                        <div id="form-third-row">
+                        <div id="form-row">
                             <div class="row-group">
                                 <label for="password">password</label>
-                                <input type="password" placeholder="password" id="password" />
+                                <input type="password" name="password" id="password" />
                             </div>
                             <div class="row-group">
                                 <label for="confirm">confirm password</label>
-                                <input type="password" placeholder="confirm" id="confirm" />
+                                <input type="password" name="password-confirm" id="confirm" />
                             </div>
                         </div>
                     </fieldset>
                 </form>
             </div>
             <div id="right-bot">
+                <button type="submit" id="submit-btn">Create Account</button>
+                <p>Already have an account? <button id="login-btn">log in</button></p>
             </div>
         </main>
     </div>
 </body>
-
 </html>

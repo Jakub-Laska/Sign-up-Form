@@ -1,11 +1,11 @@
 :root {
-    --black-600: hsla(0, 0%, 0%, 0.6);
+    --black-500: hsla(0, 0%, 0%, 0.5);
     --black-900: #131B23;
     --light: #E9F1F7;
     --lighter: #F4FAFF;
     --primary: #5B8266;
     --secondary: #202A25;
-    --box-shadow: 0 2px 8px var(--black-600);
+    --box-shadow: .2vw .2vw .5vw var(--black-500);
 }
 * {
     font-family: "Cormorant SC", Arial, serif;
@@ -37,7 +37,7 @@ z-index: -1;
     left: 0;
     width: 100%;
     height: 15vh;
-    background-color: var(--black-600);
+    background-color: var(--black-500);
     overflow: hidden;
 }
 #main-logo::before {
@@ -100,32 +100,51 @@ legend {
     color: var(--secondary);
     font-weight: 900;
     padding: 0 3vw 0 1vw;
+    font-size: clamp(1rem, 2vw, 4rem);
 }
 
-#form-first-row, #form-second-row, #form-third-row {
+#form-row {
     display: flex;
     width: 80%;
     gap: 8vw;
     padding: .5vw 2vw;
+    text-transform: uppercase;
+    font-weight: bold;
 } 
 .row-group {
     display: flex;
     flex-direction: column;
+}
+label {
+    font-size: clamp(.4rem, 1vw, 2rem);
 }
 input {
     border: outset 1px var(--secondary);
     border-radius: .2rem;
     padding: .4vw;
     background-color: var(--light);
+    box-shadow: var(--box-shadow);
 }
-
 #right-bot {
     width: 100%;
-    padding: 2rem;
+    padding: 2vw 4vw;
 }
-
-
-
+#submit-btn {
+    background-color: var(--primary);
+    padding: 1vw 3vw;
+    border-radius: .2rem;
+    color: var(--lighter);
+    text-shadow: 1px 1px 2px var(--black-900);
+    margin: 1vw 0;
+    font-size: clamp(.5rem, 2vw, 4rem);
+    box-shadow: var(--box-shadow);
+}
+#login-btn {
+    color: var(--primary);
+}
+#login-btn:focus {
+    outline: none;
+}
 
 
 @media (max-width: 900px) {
